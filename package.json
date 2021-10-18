@@ -18,12 +18,6 @@
   },
   "homepage": "https://gjmolter.github.io/revo-calendar/",
   "keywords": [
-    "event",
-    "calendar",
-    "modern",
-    "responsive",
-    "react",
-    "customizable"
   ],
   "dependencies": {
     "@babel/runtime": "^7.14.0"
