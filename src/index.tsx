@@ -381,25 +381,8 @@ const RevoCalendar = ({
       ) {
         const event = (
           <Event key={index} onClick={() => toggleDeleteButton(index)}>
-            <p>{events[index].name}</p>
+            <p>{events[index].sessionTotalTime}</p>
             <div>
-            {helperFunctions.getFormattedTime(eventDate, timeFormat24)}
-              {/* {events[index].allDay ? (
-                <>
-                  {showAllDayLabel && (
-                    <div>
-                      <svg width="20" height="20" viewBox="0 0 24 24">
-                        <path
-                          fill={primaryColorRGB}
-                          d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z"
-                        />
-                      </svg>
-                      <span>{languages[lang].allDay}</span>
-                    </div>
-                  )}
-                </>
-              ) : (
-                <div>
                   <svg width="20" height="20" viewBox="0 0 24 24">
                     <path
                       fill={primaryColorRGB}
@@ -407,21 +390,10 @@ const RevoCalendar = ({
                     />
                   </svg>
                   <span>
-                    {helperFunctions.getFormattedTime(eventDate, timeFormat24)}
+                    {/* {helperFunctions.getFormattedTime(eventDate, timeFormat24)} */}
+                    start time :{events[index].startTime} --- end time: {events[index].endTime}
+                    
                   </span>
-                </div>
-              )} */}
-              {/* {events[index].extra && (
-                <div>
-                  <svg width="20" height="20" viewBox="0 0 24 24">
-                    <path
-                      fill={primaryColorRGB}
-                      d={events[index].extra?.icon}
-                    />
-                  </svg>
-                  <span>{events[index].extra?.text}</span>
-                </div>
-              )} */}
             </div>
             {showDelete === index && (
               <button onClick={() => deleteEvent(index)}>

@@ -11,12 +11,20 @@ declare module "*.svg" {
 interface Events {
   name: string;
   date: number;
-  allDay?: boolean;
-  extra?: {
-    icon?: string;
-    text: string;
-  };
+  startTime: number;
+  endTime: number;
+  sessionTotalTime: number
 }
+
+// interface Events {
+//   name: string;
+//   date: number;
+//   allDay?: boolean;
+//   extra?: {
+//     icon?: string;
+//     text: string;
+//   };
+// }
 
 export interface Props {
   style?: object;
