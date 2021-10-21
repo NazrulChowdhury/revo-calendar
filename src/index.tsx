@@ -381,7 +381,7 @@ const RevoCalendar = ({
       ) {
         const event = (
           <Event key={index} onClick={() => toggleDeleteButton(index)}>
-            <p>{events[index].sessionTotalTime}</p>
+            <p>Session Duration : {events[index].sessionTotalTime} Hours</p>
             <div>
                   <svg width="20" height="20" viewBox="0 0 24 24">
                     <path
@@ -391,7 +391,7 @@ const RevoCalendar = ({
                   </svg>
                   <span>
                     {/* {helperFunctions.getFormattedTime(eventDate, timeFormat24)} */}
-                    start time :{events[index].startTime} --- end time: {events[index].endTime}
+                    start time :{events[index].startTime} end time: {events[index].endTime}
                     
                   </span>
             </div>
