@@ -39,9 +39,9 @@ const translations = {
       "Nov",
       "Dec",
     ],
-    noEventForThisDay: "No event for this day...",
+    noEventForThisDay: "No session for this day...",
     allDay: "All day",
-    addEvent: "Add event",
+    addEvent: "Add session",
     delete: "Delete",
   },
   es: {

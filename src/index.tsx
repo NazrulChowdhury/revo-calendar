@@ -409,8 +409,7 @@ const RevoCalendar = ({
 
     // FOR NO-EVENT DAYS ADD NO EVENTS TEXT
     if (eventDivs.length === 0) {
-      // eventDivs.push(<p key={-1}>{languages[lang].noEventForThisDay}</p>);
-      eventDivs.push(<p key={-1}>No Session for this day</p>);
+       eventDivs.push(<p key={-1}>{languages[lang].noEventForThisDay}</p>);
     }
 
     return (
@@ -435,7 +434,7 @@ const RevoCalendar = ({
                   addEvent(new Date(currentYear, currentMonth, currentDay))
                 }
               >
-                {languages[lang].addSession}
+                {languages[lang].addEvent}
               </button>
             )}
           </div>
