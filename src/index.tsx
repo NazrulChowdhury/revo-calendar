@@ -381,7 +381,7 @@ const RevoCalendar = ({
       ) {
         const event = (
           <Event key={index} onClick={() => toggleDeleteButton(index)}>
-            <p>Session Duration : {events[index].sessionLength} hh:mm</p>
+            <p>Duration : {events[index].sessionLength}</p>
             <div>
                   <svg width="20" height="20" viewBox="0 0 24 24">
                     <path
