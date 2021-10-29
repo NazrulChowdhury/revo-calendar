@@ -13,7 +13,7 @@ interface Events {
   date: number;
   startTime: number;
   endTime: number;
-  sessionTotalTime: number
+  sessionLength: number
 }
 
 // interface Events {
