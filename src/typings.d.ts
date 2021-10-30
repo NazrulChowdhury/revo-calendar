@@ -9,6 +9,7 @@ declare module "*.svg" {
 }
 
 interface Events {
+  _id : string; 
   name: string;
   date: number;
   startTime: number;
