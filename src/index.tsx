@@ -391,9 +391,7 @@ const RevoCalendar = ({
                   </svg>
                   <span>
                     {/* {helperFunctions.getFormattedTime(eventDate, timeFormat24)} */}
-                    Start:{events[index].startTime} <br />
-                    Finish: {events[index].endTime}
-                    
+                    Start:{events[index].startTime} Finish: {events[index].endTime}
                   </span>
             </div>
             {showDelete === index && (
