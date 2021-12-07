@@ -51,7 +51,7 @@ export const Calendar = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  height: 520px;
+  height: 100%;
 
   & * {
     margin: 0;
